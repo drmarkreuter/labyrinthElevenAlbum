@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Labyrinth Eleven by Abominable</title>
+  <style type="text/css">
+  
+  .branch {
+    text-align: center;
+    font-family: monospace;
+    font-size: 26px;
+    background-color: rgb(10, 10, 10);
+    letter-spacing: 3px;
+    transition: letter-spacing 1s ease;
+  }
+  
+  .branch:hover {
+    letter-spacing: 7px;
+  }
+
+  .prose {
+    font-family: monospace;
+    font-size: 12px;
+  }
+  
+  .wordart {
+    border-radius: 12px;
+    transition: width 1s;
+  }
+
+  .wordart:hover {
+    transform: rotate(2deg);
+  }
+  
+  body {
+    background-color: rgb(10, 10, 10);
+    color: rgb(245,255,255);
+    font-size: 14px;
+    /* background-image: url('images/leafpaper2.png'); */
+    }
+  
+  h1 {
+    font-size: 18px;
+  }
+   
+  h2 {
+    font-size: 16px;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    transition: width 1s;
+  }
+  
+  .center:hover {
+    width: 40%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(255,255,255);
+    padding: 5px;
+    }
+    
+    .grid-item {
+      background-color: rgba(15, 15, 15, 1);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      text-align: center;
+      }
+      
+    #one-grid {
+      background-image: url('images/pipes1light.jpeg');
+    }
+    
+    #two-grid {
+      background-image: url('images/pipes2light.jpeg');
+    }
+    
+    #three-grid {
+      background-image: url('images/pipes3light.jpeg');
+    }
+    
+    #four-grid {
+      background-image: url('images/pipes1light.jpeg');
+    }
+    
+    #five-grid {
+      background-image: url('images/pipes2light.jpeg');
+    }
+    
+    #six-grid {
+      background-image: url('images/pipes3light.jpeg');
+    }
+    
+    #seven-grid {
+      background-image: url('images/pipes1light.jpeg');
+    }
+    
+    #eight-grid {
+      background-image: url('images/pipes2light.jpeg');
+    }
+    
+    #nine-grid {
+      background-image: url('images/pipes3light.jpeg');
+    }
+    
+    </style>
+</head>
+<body>
+
+<img class="center" src="images/labyrinthElevenCover-warm-fuzzy2.png" alt="labyrinth eleven design" width="300px">
+
+<!--
+<img class = "center" src="images/branches.png" alt="branches design" style="float:right;width3002px;">
+-->
+
+<h1 class='branch'>Labyrinth Eleven - abominable</h1>
+<br>
+
+<div class="grid-container">
+  <div class="grid-item" id="one-grid">
+    <h4 class='branch'>1. Labyrinth</h4>
+    <img class='wordart' src='images/labyrinth3.jpeg' alt="labyrinth eleven track 1 art" width='65%'>
+    <br>
+    <audio id="branches1" controls style="vertical-align: middle;" ><source src="mp3/Labyrinth Eleven - 01 - Labyrinth - Abominable.mp3" type="audio/mpeg">Your browser does not support the audio element. </audio>
+    <br>
+  </div>
+
+  <div class="grid-item" id="four-grid">
+    <h4 class='branch'>4. Smoke and Leaves</h4>
+    <img class='wordart' src='images/tea-urn4.png' alt="labyrinth eleven track 4 art" width='65%'> 
+    <br>
+    <audio id="branches4" controls style="vertical-align: middle;"><source src="mp3/Labyrinth Eleven - 04time - Smoky and Sweet - Abominable.mp3" type="audio/mpeg">Your browser does not support the audio element. </audio>
+    <br>
+  </div>
+<!-- comment -->
+  <div class="grid-item" id="seven-grid">
+    <h4 class='branch'>7. Rootmaster</h4>
+    <img class='wordart' src='images/rootmaster2.png' alt="labyrinth eleven track 7 art" width='65%'>
+    <audio id="branches7" controls style="vertical-align: middle;"><source src="mp3/Labyrinth Eleven - 07 - Rootmaster - Abominable.mp3" type="audio/mpeg">Your browser does not support the audio element. </audio>
+    <br>
+  </div>
+
+  <div class="grid-item" id="two-grid">
+    <h4 class='branch'>2. Left Left Left Again</h4>
+    <img class='wordart' src='images/droids2.jpeg' alt="labyrinth eleven track 2 art" width='65%'><br>
+    <audio id="branches2" controls style="vertical-align: middle;"><source src="mp3/Labyrinth Eleven - 02 - Left Left Left Again - Abominable.mp3" type="audio/mpeg">Your browser does not support the audio element. </audio>
+    <br>
+ </div>
+
+  <div class="grid-item" id="five-grid">
+    <h4 class='branch'>5. Minor Tour</h4>
+    <img class='wordart' src='images/VendingMachine.jpeg' alt="labyrinth eleven track 5 art" width='65%'>
+    <audio id="branches5" controls style="vertical-align: middle;"><source src="mp3/Labyrinth Eleven - 05 - Minor Tour - Abominable.mp3" type="audio/mpeg">Your browser does not support the audio element. </audio>
+    <br>
+  </div>
+
+  <div class="grid-item" id="eight-grid">
+    <h4 class='branch'>8. Mmedic</h4>
+    <img class='wordart' src='images/medi-droids.png' alt="labyrinth eleven track 8 art" width='65%'>
+    <br>
+    <audio id="branches8" controls style="vertical-align: middle;"><source src="mp3/Labyrinth Eleven - 08 - Mmedic - Abominable.mp3" type="audio/mpeg">Your browser does not support the audio element. </audio>
+    <br>
+  </div>
+
+  <div class="grid-item" id="three-grid">
+    <h4 class='branch'>3. Coppervine</h4>
+    <img class='wordart' src='images/charging.jpeg' alt="labyrinth eleven track 3 art" width='65%'>
+    <br>
+    <audio id="branches3" controls style="vertical-align: middle;"><source src="mp3/Labyrinth Eleven - 03 - Coppervine - Abominable.mp3" type="audio/mpeg">Your browser does not support the audio element. </audio>
+    <br>
+  </div>
+
+  <div class="grid-item" id="six-grid">
+    <h4 class='branch'>6. Diesel</h4>
+    <img class='wordart' src='images/food-truck1.jpeg' alt="labyrinth eleven track 6 art" width='65%'>
+    <br>
+    <audio id="branches6" controls style="vertical-align: middle;"><source src="mp3/Labyrinth Eleven - 06 - Diesel - Abominable.mp3" type="audio/mpeg">Your browser does not support the audio element. </audio>
+    <br>
+  </div>
+
+  <div class="grid-item" id="nine-grid">
+    <h4 class='branch'>9. Sortie</h4>
+    <img class='wordart' src='images/octopus2.jpeg' alt="labyrinth eleven track 9 art" width='65%'>
+    <br>
+    <audio id="branches9" controls style="vertical-align: middle;"><source src="mp3/Labyrinth Eleven - 09 - Sortie - Abominable.mp3" type="audio/mpeg">Your browser does not support the audio element. </audio>
+    <br>
+  </div>  
+</div>
+
+
+<!-- <h1 class='branch'>Bonus tracks</h1>
+<table style="width:100%">
+  <tr>
+    <th></th>
+    <th>
+      <h4 class='branch'>Conkers</h4>
+      <img class='wordart' src='images/conkers-cubism.jpg' width='20%'>
+      <br>
+      <audio id="bonustrack1" controls style="vertical-align: middle;"><source src="mp3/Branches - bonus - conkers - abominable.mp3" type="audio/mpeg">Your browser does not support the audio element. </audio>
+    </th>
+    <th></th>
+  </tr>
+</table> -->
+<br>
+<h1 class='branch'>Other Releases</h1>
+<table style="width:100%">
+  <tr>
+    <th>
+      <h4 class='branch'>Silicate</h4>
+      <a href="https://drmarkreuter.github.io/silicateEP/" target="_blank"><img class='wordart' src='images/silicate-design2-1400x1400logo.png' width='300px'></a>
+      <br>
+      <a href="https://drmarkreuter.github.io/silicateEP/" target="_blank">Silicate</a>
+    </th>
+    <th>
+      <h4 class='branch'>Weaving Blossom</h4>
+      <a href="https://drmarkreuter.github.io/weavingBlossomEP/" target="_blank"><img class='wordart' src='images/weaving-blossom-bandcamp.jpg' width='300px'></a>
+      <br>
+      <a href="https://drmarkreuter.github.io/weavingBlossomEP/" target="_blank">Weaving Blossom</a>
+    </th>
+    <th>
+      <h4 class='branch'>Schlafen</h4>
+      <a href="https://drmarkreuter.github.io/schlafenEP/" target="_blank"><img class='wordart' src='images/schlafen-bandcamp.jpg' width='300px'></a>
+      <br>
+      <a href="https://drmarkreuter.github.io/schlafenEP/" target="_blank">Schlafen</a>
+    </th>
+  </tr>
+  <tr>
+    <th>
+      <h4 class='branch'>Black Dust</h4>
+      <a href="https://drmarkreuter.github.io/blackdustEP/" target="_blank"><img class='wordart' src='images/blackdust_coverart_logo_version700x700.png' width='300px'></a>
+      <br>
+      <a href="https://drmarkreuter.github.io/blackdustEP/" target="_blank">Black Dust</a>
+    </th>
+    <th>
+      <h4 class='branch'>Branches</h4>
+      <a href="https://drmarkreuter.github.io/branchesAlbum/" target="_blank"><img class='wordart' src='images/branches.png' width='300px'></a>
+      <br>
+      <a href="https://drmarkreuter.github.io/branchesAlbum/" target="_blank">Branches</a>
+    </th>
+    <th>
+      
+    </th>
+  </tr>
+</table>
+<br>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'F2F62TEYL');kofiwidget2.draw();</script> 
+<br>
+<h1>Socials</h1>
+<a href="https://linktr.ee/abominablemusic" target="_blank">everything is here...</a>
+
+<img class="center" src="images/labyrinthElevenCover-warm-fuzzy2.png" alt="labyrinth eleven design" width="300px">
+
+<h1 class='branch'>Labyrinth Eleven - abominable</h1>
+
+<footer>
+  <p>Made wth love by Mark</p>
+  <p><a href="mailto:mark.reuter@googlemail.com?subject=labyrintheleven">contact</a></p>
+</footer>
+
+<script>
+function playSequentially() {
+  var audio1 = document.getElementById("branches1");
+  var audio2 = document.getElementById("branches2");
+  var audio3 = document.getElementById("branches3");
+  var audio4 = document.getElementById("branches4");
+  var audio5 = document.getElementById("branches5");
+  var audio6 = document.getElementById("branches6");
+  var audio7 = document.getElementById("branches7");
+  var audio8 = document.getElementById("branches8");
+  var audio9 = document.getElementById("branches9");
+
+  // When the first audio finishes playing, play the second one
+  audio1.addEventListener("ended", function() {
+    audio2.play();
+  });
+  
+  audio2.addEventListener("ended", function() {
+    audio3.play();
+  });
+  
+  audio3.addEventListener("ended", function() {
+    audio4.play();
+  });
+  
+  audio4.addEventListener("ended", function() {
+    audio5.play();
+  });
+  
+  audio5.addEventListener("ended", function() {
+    audio6.play();
+  });
+  
+  audio6.addEventListener("ended",function(){
+    audio7.play();
+  });
+  
+  audio7.addEventListener("ended",function(){
+    audio8.play();
+  });
+  
+  audio8.addEventListener("ended",function(){
+    audio9.play();
+  });
+  
+  //audio9.addEventListener("ended",function(){
+  //  audio1.play();
+  //});
+}
+
+// Call the function when the page loads
+window.onload = playSequentially;
+</script>
+
+<script>
+//function stopAudio1() {
+//  var audio1 = document.getElementById("branches1");
+//  audio1.pause();
+//  audio1.currentTime = 0;
+//}
+
+function stopAudio12345678() {
+  var audio1 = document.getElementById("branches1");
+  var audio2 = document.getElementById("branches2");
+  var audio3 = document.getElementById("branches3");
+  var audio4 = document.getElementById("branches4");
+  var audio5 = document.getElementById("branches5");
+  var audio6 = document.getElementById("branches6");
+  var audio7 = document.getElementById("branches7");
+  var audio8 = document.getElementById("branches8");
+  audio1.pause();
+  audio1.currentTime = 0;
+  
+  audio2.pause();
+  audio2.currentTime = 0;
+  
+  audio3.pause();
+  audio3.currentTime = 0;
+  
+  audio4.pause();
+  audio4.currentTime = 0;
+  
+  audio5.pause();
+  audio5.currentTime = 0;
+  
+  audio6.pause();
+  audio6.currentTime = 0;
+  
+  audio7.pause();
+  audio7.currentTime = 0;
+  
+  audio8.pause();
+  audio8.currentTime = 0;
+}
+
+function stopAudio23456789() {
+  var audio2 = document.getElementById("branches2");
+  var audio3 = document.getElementById("branches3");
+  var audio4 = document.getElementById("branches4");
+  var audio5 = document.getElementById("branches5");
+  var audio6 = document.getElementById("branches6");
+  var audio7 = document.getElementById("branches7");
+  var audio8 = document.getElementById("branches8");
+  var audio9 = document.getElementById("branches9");
+  
+  audio2.pause();
+  audio2.currentTime = 0;
+  
+  audio3.pause();
+  audio3.currentTime = 0;
+  
+  audio4.pause();
+  audio4.currentTime = 0;
+  
+  audio5.pause();
+  audio5.currentTime = 0;
+  
+  audio6.pause();
+  audio6.currentTime = 0;
+  
+  audio7.pause();
+  audio7.currentTime = 0;
+  
+  audio8.pause();
+  audio8.currentTime = 0;
+  
+  audio9.pause();
+  audio9.currentTime = 0;
+}
+
+function stopAudio13456789() {
+  var audio1 = document.getElementById("branches1");
+  var audio3 = document.getElementById("branches3");
+  var audio4 = document.getElementById("branches4");
+  var audio5 = document.getElementById("branches5");
+  var audio6 = document.getElementById("branches6");
+  var audio7 = document.getElementById("branches7");
+  var audio8 = document.getElementById("branches8");
+  var audio9 = document.getElementById("branches9");
+  
+  audio1.pause();
+  audio1.currentTime = 0;
+  
+  audio3.pause();
+  audio3.currentTime = 0;
+  
+  audio4.pause();
+  audio4.currentTime = 0;
+  
+  audio5.pause();
+  audio5.currentTime = 0;
+  
+  audio6.pause();
+  audio6.currentTime = 0;
+  
+  audio7.pause();
+  audio7.currentTime = 0;
+  
+  audio8.pause();
+  audio8.currentTime = 0;
+  
+  audio9.pause();
+  audio9.currentTime = 0;
+}
+
+function stopAudio12456789() {
+  var audio1 = document.getElementById("branches1");
+  var audio2 = document.getElementById("branches2");
+  var audio4 = document.getElementById("branches4");
+  var audio5 = document.getElementById("branches5");
+  var audio6 = document.getElementById("branches6");
+  var audio7 = document.getElementById("branches7");
+  var audio8 = document.getElementById("branches8");
+  var audio9 = document.getElementById("branches9");
+  
+  audio1.pause();
+  audio1.currentTime = 0;
+  
+  audio2.pause();
+  audio2.currentTime = 0;
+  
+  audio4.pause();
+  audio4.currentTime = 0;
+  
+  audio5.pause();
+  audio5.currentTime = 0;
+  
+  audio6.pause();
+  audio6.currentTime = 0;
+  
+  audio7.pause();
+  audio7.currentTime = 0;
+  
+  audio8.pause();
+  audio8.currentTime = 0;
+  
+  audio9.pause();
+  audio9.currentTime = 0;
+}
+
+function stopAudio12356789() {
+  var audio1 = document.getElementById("branches1");
+  var audio2 = document.getElementById("branches2");
+  var audio3 = document.getElementById("branches3");
+  var audio5 = document.getElementById("branches5");
+  var audio6 = document.getElementById("branches6");
+  var audio7 = document.getElementById("branches7");
+  var audio8 = document.getElementById("branches8");
+  var audio9 = document.getElementById("branches9");
+  
+  audio1.pause();
+  audio1.currentTime = 0;
+  
+  audio2.pause();
+  audio2.currentTime = 0;
+  
+  audio3.pause();
+  audio3.currentTime = 0;
+  
+  audio5.pause();
+  audio5.currentTime = 0;
+  
+  audio6.pause();
+  audio6.currentTime = 0;
+  
+  audio7.pause();
+  audio7.currentTime = 0;
+  
+  audio8.pause();
+  audio8.currentTime = 0;
+  
+  audio9.pause();
+  audio9.currentTime = 0;
+}
+
+function stopAudio12346789() {
+  var audio1 = document.getElementById("branches1");
+  var audio2 = document.getElementById("branches2");
+  var audio3 = document.getElementById("branches3");
+  var audio4 = document.getElementById("branches4");
+  var audio6 = document.getElementById("branches6");
+  var audio7 = document.getElementById("branches7");
+  var audio8 = document.getElementById("branches8");
+  var audio9 = document.getElementById("branches9");
+  
+  audio1.pause();
+  audio1.currentTime = 0;
+  
+  audio2.pause();
+  audio2.currentTime = 0;
+  
+  audio3.pause();
+  audio3.currentTime = 0;
+  
+  audio4.pause();
+  audio4.currentTime = 0;
+  
+  audio6.pause();
+  audio6.currentTime = 0;
+  
+  audio7.pause();
+  audio7.currentTime = 0;
+  
+  audio8.pause();
+  audio8.currentTime = 0;
+  
+  audio9.pause();
+  audio9.currentTime = 0;
+}
+
+function stopAudio12345789() {
+  var audio1 = document.getElementById("branches1");
+  var audio2 = document.getElementById("branches2");
+  var audio3 = document.getElementById("branches3");
+  var audio4 = document.getElementById("branches4");
+  var audio5 = document.getElementById("branches5");
+  var audio7 = document.getElementById("branches7");
+  var audio8 = document.getElementById("branches8");
+  var audio9 = document.getElementById("branches9");
+  
+  audio1.pause();
+  audio1.currentTime = 0;
+  
+  audio2.pause();
+  audio2.currentTime = 0;
+  
+  audio3.pause();
+  audio3.currentTime = 0;
+  
+  audio4.pause();
+  audio4.currentTime = 0;
+  
+  audio5.pause();
+  audio5.currentTime = 0;
+  
+  audio7.pause();
+  audio7.currentTime = 0;
+  
+  audio8.pause();
+  audio8.currentTime = 0;
+  
+  audio9.pause();
+  audio9.currentTime = 0;
+}
+
+function stopAudio12345689() {
+  var audio1 = document.getElementById("branches1");
+  var audio2 = document.getElementById("branches2");
+  var audio3 = document.getElementById("branches3");
+  var audio4 = document.getElementById("branches4");
+  var audio5 = document.getElementById("branches5");
+  var audio6 = document.getElementById("branches6");
+  var audio8 = document.getElementById("branches8");
+  var audio9 = document.getElementById("branches9");
+  
+  audio1.pause();
+  audio1.currentTime = 0;
+  
+  audio2.pause();
+  audio2.currentTime = 0;
+  
+  audio3.pause();
+  audio3.currentTime = 0;
+  
+  audio4.pause();
+  audio4.currentTime = 0;
+  
+  audio5.pause();
+  audio5.currentTime = 0;
+  
+  audio6.pause();
+  audio6.currentTime = 0;
+  
+  audio8.pause();
+  audio8.currentTime = 0;
+  
+  audio9.pause();
+  audio9.currentTime = 0;
+}
+
+function stopAudio12345679() {
+  var audio1 = document.getElementById("branches1");
+  var audio2 = document.getElementById("branches2");
+  var audio3 = document.getElementById("branches3");
+  var audio4 = document.getElementById("branches4");
+  var audio5 = document.getElementById("branches5");
+  var audio6 = document.getElementById("branches6");
+  var audio7 = document.getElementById("branches7");
+  var audio9 = document.getElementById("branches9");
+  
+  audio1.pause();
+  audio1.currentTime = 0;
+  
+  audio2.pause();
+  audio2.currentTime = 0;
+  
+  audio3.pause();
+  audio3.currentTime = 0;
+  
+  audio4.pause();
+  audio4.currentTime = 0;
+  
+  audio5.pause();
+  audio5.currentTime = 0;
+  
+  audio6.pause();
+  audio6.currentTime = 0;
+  
+  audio7.pause();
+  audio7.currentTime = 0;
+  
+  audio9.pause();
+  audio9.currentTime = 0;
+}
+
+document.getElementById("branches1").addEventListener("play", stopAudio23456789);
+document.getElementById("branches2").addEventListener("play", stopAudio13456789);
+document.getElementById("branches3").addEventListener("play", stopAudio12456789);
+document.getElementById("branches4").addEventListener("play", stopAudio12356789);
+document.getElementById("branches5").addEventListener("play", stopAudio12346789);
+document.getElementById("branches6").addEventListener("play", stopAudio12345789);
+document.getElementById("branches7").addEventListener("play", stopAudio12345689);
+document.getElementById("branches8").addEventListener("play", stopAudio12345679);
+document.getElementById("branches9").addEventListener("play", stopAudio12345678);
+
+</script>
+
+</body>
+</html>
+
+
