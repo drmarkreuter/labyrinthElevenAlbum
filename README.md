@@ -1,4 +1,4 @@
-# labyrinthElevenAlbum
+# Labyrinth Eleven by Abominable
 
 Track Listing
 1. Labyrinth
